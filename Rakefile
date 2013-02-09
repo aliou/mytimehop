@@ -2,7 +2,7 @@ namespace :db do
   require_relative 'database'
   desc "Imports the initial tweets from the JSON files."
   task :import do
-    initial_import
+    puts "Import from twitter or json files."
   end
 end
 

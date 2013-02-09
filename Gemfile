@@ -9,3 +9,6 @@ gem 'gmail'
 
 # JSON
 gem 'oj'
+
+# Twitter
+gem 'twitter'
