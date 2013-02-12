@@ -15,7 +15,6 @@ GEM
     mime (0.1)
     mime-types (1.19)
     oauth (0.4.7)
-    oj (2.0.0)
     pg (0.14.1)
     polyglot (0.3.3)
     sequel (3.42.0)
@@ -28,6 +27,5 @@ PLATFORMS
 
 DEPENDENCIES
   gmail
-  oj
   pg
   sequel
