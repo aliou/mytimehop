@@ -7,8 +7,5 @@ gem 'pg'
 # Mail
 gem 'gmail'
 
-# JSON
-gem 'oj'
-
 # Twitter
 gem 'twitter'

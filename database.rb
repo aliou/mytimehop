@@ -1,14 +1,14 @@
 require 'sequel'
 require 'date'
-require 'oj'
 require 'twitter'
+require 'json'
 
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/mytimehop')
 
 def initial_import_json
   tweets = []
   Dir['tmp/tweets/*.json'].each do |file|
-    tweet = Oj.load_file file
+    tweet = JSON.load(File.read(file))
     tweet["date"] = Time.parse(tweet["created_at"]).to_i
     tweets << tweet
   end
