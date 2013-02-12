@@ -4,7 +4,7 @@ require 'date'
 def send_mail(tweets)
   str = ""
   tweets.each do |tw|
-    str += "#{tw[:text]}<br /><small>#{tw[:created_at]}</small><br /><br />"
+    str += "#{tw[:text]}<br /><small>#{tw[:created_at]}</small><br /><hr />"
   end
   Gmail.connect(ENV["bot_mail"], ENV["bot_passwd"]) do |gmail|
     gmail.deliver do
