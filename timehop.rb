@@ -11,3 +11,6 @@ def get_tweets
 
   tweets.to_a
 end
+
+def get_instagram
+end
