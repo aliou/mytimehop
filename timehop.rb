@@ -6,8 +6,9 @@ def get_tweets
   res = []
   today = (DateTime.now.to_date - 366).strftime('%s').to_i
   tomorrow = today + 3600 * 24
-  tweets = DB.fetch("Select * from tweets
+  query = DB.fetch("Select * from tweets
   where date >= #{today} AND date < #{tomorrow}")
 
-  tweets.to_a
+  tweets = query.to_a
+  tweets
 end
