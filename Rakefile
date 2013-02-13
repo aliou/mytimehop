@@ -8,7 +8,7 @@ end
 
 namespace :mail do
   require_relative 'timehop'
-  require_relative 'mail.rb'
+  require_relative 'mail'
   desc "Sends a TimeHop mail."
   task :send do
     tw = get_tweets
