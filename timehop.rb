@@ -9,6 +9,6 @@ def get_tweets
   query = DB.fetch("Select * from tweets
   where date >= #{today} AND date < #{tomorrow}")
 
-  tweets = query.to_a
+  tweets = query.to_a.sort { |a,b| a[:date] <=> b[:date] }
   tweets
 end
