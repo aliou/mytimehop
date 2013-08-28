@@ -6,3 +6,6 @@ gem 'pg'
 
 # Mail
 gem 'gmail'
+
+# Twitter
+gem 'twitter'
